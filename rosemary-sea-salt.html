@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a; --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8; }
+    body { font-family: "Lora", serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: "Playfair Display", serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links a { display: block; padding: 0.4rem 1rem; text-decoration: none; font-size: 0.875rem; color: var(--text-light); border-radius: 20px; transition: all 0.2s; }
+    .nav-links a:hover { background: var(--blush); color: var(--brown); }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 0 0; padding: 0 2rem; }
+    .back-link:hover { color: var(--rose); }
+    .recipe-header { text-align: center; padding: 3rem 2rem 2rem; max-width: 800px; margin: 0 auto; }
+    .recipe-icon-lg { font-size: 3.5rem; margin-bottom: 1rem; }
+    .recipe-title { font-family: "Playfair Display", serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; color: var(--brown); margin-bottom: 1rem; }
+    .recipe-title em { font-style: italic; color: var(--rose); }
+    .proofing-box { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--warm-white); border: 1.5px dashed var(--blush); color: var(--rose); font-size: 0.9rem; padding: 0.75rem 1.5rem; border-radius: 24px; font-style: italic; margin-bottom: 2rem; }
+    .photo-placeholder { max-width: 700px; margin: 0 auto 2.5rem; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
+    .photo-placeholder img { width: 100%; height: auto; display: block; }
+    .photo-placeholder-empty { background: var(--warm-white); height: 380px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; color: var(--text-light); font-style: italic; }
+    .photo-placeholder-empty span { font-size: 3rem; }
+    .steps-placeholder { max-width: 700px; margin: 0 auto 4rem; padding: 0 2rem; }
+    .step { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start; }
+    .step-num { background: var(--rose); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-size: 0.95rem; flex-shrink: 0; }
+    .step-text { color: var(--text-light); font-style: italic; line-height: 1.7; padding-top: 0.2rem; }
+    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.82rem; font-style: italic; }
+    @media (max-width: 600px) { nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; } }
+  </style>
+  <title>Rosemary & Sea Salt — Crumb of Her Own</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">Crumb of Her Own</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#recipes">Recipes</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#follow">Follow</a></li>
+    </ul>
+  </nav>
+  <a class="back-link" href="index.html">← Back to all recipes</a>
+  <div class="recipe-header">
+    <div class="recipe-icon-lg">🌿</div>
+    <h1 class="recipe-title">Rosemary & Sea Salt</h1>
+    <div class="proofing-box">🍞 This recipe is still proofing — check back soon!</div>
+  </div>
+  <div class="photo-placeholder"><div class="photo-placeholder-empty"><span>📷</span><p>Photo coming soon</p></div></div>
+  <div class="steps-placeholder">
+    <div class="step"><div class="step-num">1</div><div class="step-text">Step by step instructions coming soon. We are still perfecting this recipe for you!</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text">Tips, tricks, and all the happy accidents will be shared here.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text">Follow along on Instagram and TikTok @crumbofherown for sneak peeks in the meantime!</div></div>
+  </div>
+  <footer><p>Made with 🤍 and a whole lot of starter — © 2025 Crumb of Her Own</p></footer>
+</body>
+</html>
