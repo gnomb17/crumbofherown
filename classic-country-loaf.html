@@ -3,37 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Loaf — Crumb of Her Own</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a; --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8; }
-    body { font-family: "Lora", serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: "Playfair Display", serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
+    :root {
+      --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a;
+      --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8;
+    }
+    body { font-family: 'Lora', serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
     .nav-links { display: flex; gap: 0.25rem; list-style: none; }
     .nav-links a { display: block; padding: 0.4rem 1rem; text-decoration: none; font-size: 0.875rem; color: var(--text-light); border-radius: 20px; transition: all 0.2s; }
     .nav-links a:hover { background: var(--blush); color: var(--brown); }
-    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 0 0; padding: 0 2rem; }
+
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 2rem 0; }
     .back-link:hover { color: var(--rose); }
-    .recipe-header { text-align: center; padding: 3rem 2rem 2rem; max-width: 800px; margin: 0 auto; }
-    .recipe-icon-lg { font-size: 3.5rem; margin-bottom: 1rem; }
-    .recipe-title { font-family: "Playfair Display", serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; color: var(--brown); margin-bottom: 1rem; }
-    .recipe-title em { font-style: italic; color: var(--rose); }
-    .proofing-box { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--warm-white); border: 1.5px dashed var(--blush); color: var(--rose); font-size: 0.9rem; padding: 0.75rem 1.5rem; border-radius: 24px; font-style: italic; margin-bottom: 2rem; }
-    .photo-placeholder { max-width: 700px; margin: 0 auto 2.5rem; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
-    .photo-placeholder img { width: 100%; height: auto; display: block; }
-    .photo-placeholder-empty { background: var(--warm-white); height: 380px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; color: var(--text-light); font-style: italic; }
-    .photo-placeholder-empty span { font-size: 3rem; }
-    .steps-placeholder { max-width: 700px; margin: 0 auto 4rem; padding: 0 2rem; }
-    .step { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start; }
-    .step-num { background: var(--rose); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-size: 0.95rem; flex-shrink: 0; }
-    .step-text { color: var(--text-light); font-style: italic; line-height: 1.7; padding-top: 0.2rem; }
+
+    .hero-img { width: 100%; max-height: 480px; object-fit: cover; display: block; margin-top: 1.5rem; }
+
+    .content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 5rem; }
+
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; color: var(--brown); margin-bottom: 0.5rem; }
+    .tagline { color: var(--text-light); font-style: italic; font-size: 1rem; line-height: 1.7; margin-bottom: 2.5rem; }
+
+    .section-heading { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown); margin: 2.5rem 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
+
+    .ingredients-box { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
+    .ingredients-box ul { list-style: none; }
+    .ingredients-box li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.97rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-box li:last-child { border-bottom: none; }
+    .ingredients-box li::before { content: '🌾'; font-size: 0.85rem; }
+
+    .step-block { margin-bottom: 1.5rem; }
+    .step-block p { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.75rem; }
+    .step-block ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    .step-block ul li { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.3rem; }
+
+    .recipe-img { width: 100%; border-radius: 16px; margin: 1.25rem 0; border: 1px solid var(--border); display: block; }
+
+    .tip-box { background: var(--warm-white); border-left: 4px solid var(--rose); border-radius: 0 12px 12px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; color: var(--text-light); font-style: italic; font-size: 0.93rem; line-height: 1.7; }
+
+    .final-note { background: var(--sage-light); border-radius: 16px; padding: 1.5rem 2rem; margin-top: 2.5rem; text-align: center; color: var(--brown); font-style: italic; font-size: 1rem; line-height: 1.8; }
+
     footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.82rem; font-style: italic; }
-    @media (max-width: 600px) { nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; } }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; }
+      .content { padding: 2rem 1.25rem 4rem; }
+    }
   </style>
-  <title>Classic Country Loaf — Crumb of Her Own</title>
 </head>
 <body>
+
   <nav>
     <a class="nav-logo" href="index.html">Crumb of Her Own</a>
     <ul class="nav-links">
@@ -43,18 +67,130 @@
       <li><a href="index.html#follow">Follow</a></li>
     </ul>
   </nav>
+
   <a class="back-link" href="index.html">← Back to all recipes</a>
-  <div class="recipe-header">
-    <div class="recipe-icon-lg">🌾</div>
-    <h1 class="recipe-title">Classic Country Loaf</h1>
-    <div class="proofing-box">🍞 This recipe is still proofing — check back soon!</div>
+
+  <img class="hero-img" src="title.jpeg" alt="Classic Loaf" />
+
+  <div class="content">
+
+    <h1>🥖 Classic Loaf</h1>
+    <p class="tagline">A simple everyday sourdough loaf with a crisp crust, soft airy crumb, and lower hydration dough that's easier for beginners to handle.</p>
+
+    <h2 class="section-heading">🧾 Ingredients</h2>
+    <div class="ingredients-box">
+      <ul>
+        <li>525g bread flour</li>
+        <li>350g warm water (78–82°F / 25–28°C)</li>
+        <li>125g active sourdough starter (bubbly and recently fed)</li>
+        <li>12g salt</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">🥣 Mix the Dough</h2>
+    <div class="step-block">
+      <p>Add 350g warm water to a large mixing bowl.</p>
+      <p>Add 125g active sourdough starter and whisk until mostly dissolved and the water looks cloudy and frothy.</p>
+      <img class="recipe-img" src="frothy.jpeg" alt="Frothy starter in water" />
+      <p>Add 525g bread flour and 12g salt.</p>
+      <p>Mix until a shaggy dough forms.</p>
+      <p>Switch to clean, slightly wet hands or gloves and squeeze/fold the dough until no dry flour remains. The dough will still look a little rough and sticky at this stage — that's normal.</p>
+      <img class="recipe-img" src="shaggydough.jpeg" alt="Shaggy dough" />
+      <p>Cover the bowl with a lid, damp towel, or shower cap and let rest for 30–60 minutes.</p>
+    </div>
+
+    <h2 class="section-heading">✋ Stretch and Folds</h2>
+    <div class="step-block">
+      <p>After the rest, you'll begin stretch and folds to strengthen the dough. You'll do 4 rounds total, spaced 30 minutes apart.</p>
+      <p>To perform one round:</p>
+      <ul>
+        <li>Wet your hand lightly so the dough doesn't stick</li>
+        <li>Grab one edge of the dough</li>
+        <li>Slowly stretch it upward</li>
+        <li>Fold it back down into the center</li>
+        <li>Rotate the bowl and repeat on all four sides</li>
+      </ul>
+      <p>That completes one round.</p>
+      <img class="recipe-img" src="stretchandfold.jpeg" alt="Stretch and fold" />
+      <p>Cover and rest 30 minutes between each round. Each round, the dough will become smoother, stronger, and more elastic.</p>
+    </div>
+
+    <h2 class="section-heading">🌤️ Rest & Rise (Bulk Fermentation)</h2>
+    <div class="step-block">
+      <p>Bulk fermentation begins as soon as you mix your dough and happens at room temperature. It includes the stretch and folds.</p>
+      <p>After your final stretch and fold, keep the dough covered and let it rest on your counter until it becomes light, airy, and puffy. Bulk fermentation usually takes about 6–12 hours total from the time you first mix the dough. Warmer kitchens and stronger starters ferment faster, while cooler kitchens may take longer.</p>
+      <div class="tip-box">
+        👀 Your dough is ready when it has risen about 50–75%, looks smoother and slightly domed, jiggles when the bowl is gently shaken, feels airy and lighter, has small bubbles along the sides or surface, and begins to release slightly from the sides of the bowl. Don't focus too much on exact timing — watch your dough more than the clock.
+      </div>
+      <img class="recipe-img" src="doughbowl.jpeg" alt="Dough after bulk fermentation" />
+      <img class="recipe-img" src="peel.jpeg" alt="Dough ready to peel" />
+      <p><strong>Pre-shape:</strong></p>
+      <ul>
+        <li>Lightly flour your counter and gently turn out the dough.</li>
+        <li>Gather the edges of the dough into the center to form a loose ball.</li>
+        <li>Flip it over so the smooth side is facing up and the seam is underneath.</li>
+        <li>Let it rest for 15–20 minutes to relax before final shaping.</li>
+      </ul>
+      <img class="recipe-img" src="preshape.jpeg" alt="Pre-shaped dough" />
+    </div>
+
+    <h2 class="section-heading">🍞 Final Shape (Batard)</h2>
+    <div class="step-block">
+      <p>Lightly flour the top of the dough and flip it over. Gently stretch into a rectangle.</p>
+      <ul>
+        <li>Step 1: Fold the bottom edge up one-third of the way.</li>
+        <li>Step 2: Fold the left side into the center, then fold the right side over it like an envelope.</li>
+        <li>Step 3: Pull the top edge down over the center.</li>
+        <li>Step 4: Pinch and stitch the dough down the center to anchor it.</li>
+        <li>Step 5: Roll the dough into a tight log, then pinch both ends firmly closed.</li>
+      </ul>
+      <img class="recipe-img" src="finalshape.jpeg" alt="Final shaped dough" />
+    </div>
+
+    <h2 class="section-heading">🧺 Proofing</h2>
+    <div class="step-block">
+      <p>Lightly flour a banneton or towel-lined bowl with all-purpose flour.</p>
+      <p>Place the dough seam-side up into the banneton. Let rest uncovered for 10 minutes.</p>
+      <p>Then gently stitch the seam closed by pulling small sections of dough from each side toward the center, like lacing it together. This helps build tension for better oven spring.</p>
+      <img class="recipe-img" src="stich.jpeg" alt="Stitching the seam" />
+      <p>Lightly dust the top with flour and cover. Place in the refrigerator overnight or for 8–16 hours.</p>
+    </div>
+
+    <h2 class="section-heading">❄️ Cold Proof</h2>
+    <div class="step-block">
+      <p>Cover the dough and refrigerate for 8–16 hours or overnight. This slow fermentation develops flavor and makes the dough easier to score before baking.</p>
+    </div>
+
+    <h2 class="section-heading">🔥 Baking</h2>
+    <div class="step-block">
+      <p>Preheat your oven to 500°F (260°C) with a Dutch oven inside for at least 30 minutes.</p>
+      <div class="tip-box">To help prevent the bottom from over-browning, place a baking sheet on the rack below the Dutch oven during baking.</div>
+      <p>Keep the dough in the refrigerator until right before baking. Remove the dough from the fridge. Lightly dust the top with flour, then turn it out onto parchment paper.</p>
+
+      <p><strong>✂️ Scoring</strong></p>
+      <p>Lightly dust the top of the dough with flour before scoring. This helps prevent sticking. If you have rice flour, you can use it instead for an even cleaner, more defined finish — but all-purpose flour works just fine.</p>
+      <p>Using a sharp blade or bread lame, make one long confident cut about ¼ inch deep at a slight angle across the dough. This score allows the bread to expand in the oven and creates the signature "ear." Optional decorative scores can be added with very shallow surface cuts.</p>
+      <img class="recipe-img" src="scoring.jpeg" alt="Scoring the dough" />
+
+      <p>Carefully lift the parchment paper and transfer the dough into the hot Dutch oven. Cover with the lid.</p>
+      <ul>
+        <li>Bake for 30 minutes at 450°F (232°C) with the lid on.</li>
+        <li>Remove the lid, reduce to 425°F (218°C), and bake another 15–20 minutes until deep golden brown.</li>
+      </ul>
+
+      <div class="tip-box">🌡️ The bread is fully baked when the internal temperature reaches 205–210°F (96–99°C).</div>
+
+      <p>Remove the bread from the Dutch oven and place on a cooling rack. Let cool completely before slicing so the crumb can finish setting inside.</p>
+      <img class="recipe-img" src="baked.jpeg" alt="Baked classic loaf" />
+    </div>
+
+    <div class="final-note">
+      Sourdough takes repetition, not perfection. Each bake teaches you something about your dough. 🤍
+    </div>
+
   </div>
-  <div class="photo-placeholder"><img src="country-loaf.jpeg" alt="Classic Country Loaf" /></div>
-  <div class="steps-placeholder">
-    <div class="step"><div class="step-num">1</div><div class="step-text">Step by step instructions coming soon. We are still perfecting this recipe for you!</div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-text">Tips, tricks, and all the happy accidents will be shared here.</div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-text">Follow along on Instagram and TikTok @crumbofherown for sneak peeks in the meantime!</div></div>
-  </div>
+
   <footer><p>Made with 🤍 and a whole lot of starter — © 2025 Crumb of Her Own</p></footer>
+
 </body>
 </html>
