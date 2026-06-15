@@ -3,35 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Sourdough Sandwich Bread — Crumb of Her Own</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a; --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8; }
-    body { font-family: "Lora", serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-    .nav-logo { font-family: "Playfair Display", serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
-    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
-    .nav-links a { display: block; padding: 0.4rem 1rem; text-decoration: none; font-size: 0.875rem; color: var(--text-light); border-radius: 20px; transition: all 0.2s; }
-    .nav-links a:hover { background: var(--blush); color: var(--brown); }
-    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 0 0; padding: 0 2rem; }
-    .back-link:hover { color: var(--rose); }
-    .recipe-header { text-align: center; padding: 3rem 2rem 2rem; max-width: 800px; margin: 0 auto; }
-    .recipe-icon-lg { font-size: 3.5rem; margin-bottom: 1rem; }
-    .recipe-title { font-family: "Playfair Display", serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; color: var(--brown); margin-bottom: 1rem; }
-    .recipe-title em { font-style: italic; color: var(--rose); }
-    .proofing-box { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--warm-white); border: 1.5px dashed var(--blush); color: var(--rose); font-size: 0.9rem; padding: 0.75rem 1.5rem; border-radius: 24px; font-style: italic; margin-bottom: 2rem; }
-    .photo-placeholder { max-width: 700px; margin: 0 auto 2.5rem; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
-    .photo-placeholder img { width: 100%; height: auto; display: block; }
-    .photo-placeholder-empty { background: var(--warm-white); height: 380px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; color: var(--text-light); font-style: italic; }
-    .photo-placeholder-empty span { font-size: 3rem; }
-    .steps-placeholder { max-width: 700px; margin: 0 auto 4rem; padding: 0 2rem; }
-    .step { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; display: flex; gap: 1rem; align-items: flex-start; }
-    .step-num { background: var(--rose); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-size: 0.95rem; flex-shrink: 0; }
-    .step-text { color: var(--text-light); font-style: italic; line-height: 1.7; padding-top: 0.2rem; }
-    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.82rem; font-style: italic; }
-    @media (max-width: 600px) { nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; } }
-  </style>
-  <title>Soft Sandwich Loaf — Crumb of Her Own</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJ0LKQ47FG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,8 +12,48 @@
     gtag("js", new Date());
     gtag("config", "G-NJ0LKQ47FG");
   </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a;
+      --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8;
+    }
+    body { font-family: 'Lora', serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links a { display: block; padding: 0.4rem 1rem; text-decoration: none; font-size: 0.875rem; color: var(--text-light); border-radius: 20px; transition: all 0.2s; }
+    .nav-links a:hover { background: var(--blush); color: var(--brown); }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 2rem 0; }
+    .back-link:hover { color: var(--rose); }
+    .hero-img { width: 100%; max-height: 480px; object-fit: cover; display: block; margin-top: 1.5rem; }
+    .content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 5rem; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; color: var(--brown); margin-bottom: 0.5rem; }
+    .tagline { color: var(--text-light); font-style: italic; font-size: 1rem; line-height: 1.7; margin-bottom: 2.5rem; }
+    .section-heading { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown); margin: 2.5rem 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-box { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
+    .ingredients-box ul { list-style: none; }
+    .ingredients-box li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.97rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-box li:last-child { border-bottom: none; }
+    .ingredients-box li::before { content: '🌾'; font-size: 0.85rem; }
+    .step-block { margin-bottom: 1.5rem; }
+    .step-block p { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.75rem; }
+    .step-block ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    .step-block ul li { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.3rem; }
+    .recipe-img { width: 100%; border-radius: 16px; margin: 1.25rem 0; border: 1px solid var(--border); display: block; }
+    .tip-box { background: var(--warm-white); border-left: 4px solid var(--rose); border-radius: 0 12px 12px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; color: var(--text-light); font-style: italic; font-size: 0.93rem; line-height: 1.7; }
+    .equipment-box { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; color: var(--text); line-height: 1.8; font-size: 0.97rem; }
+    .final-note { background: var(--sage-light); border-radius: 16px; padding: 1.5rem 2rem; margin-top: 2.5rem; text-align: center; color: var(--brown); font-style: italic; font-size: 1rem; line-height: 1.8; }
+    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.82rem; font-style: italic; }
+    @media (max-width: 600px) {
+      nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; }
+      .content { padding: 2rem 1.25rem 4rem; }
+    }
+  </style>
 </head>
 <body>
+
   <nav>
     <a class="nav-logo" href="index.html">Crumb of Her Own</a>
     <ul class="nav-links">
@@ -50,18 +63,126 @@
       <li><a href="index.html#follow">Follow</a></li>
     </ul>
   </nav>
+
   <a class="back-link" href="index.html">← Back to all recipes</a>
-  <div class="recipe-header">
-    <div class="recipe-icon-lg">🥪</div>
-    <h1 class="recipe-title">Soft Sandwich Loaf</h1>
-    <div class="proofing-box">🍞 This recipe is still proofing — check back soon!</div>
+
+  <img class="hero-img" src="mainfront.jpeg" alt="Soft Sourdough Sandwich Bread" />
+
+  <div class="content">
+
+    <h1>🥪 Soft Sourdough Sandwich Bread</h1>
+    <p class="tagline">A soft, fluffy everyday sandwich loaf with a tender crumb and mild sourdough flavor.</p>
+
+    <h2 class="section-heading">🧰 Equipment</h2>
+    <div class="equipment-box">
+      <p>1 standard loaf pan (approximately 9x5 inches)</p>
+      <br>
+      <div class="tip-box">💡 The Two-Pan Trick: While you only need one pan to bake the actual bread, having a second identical loaf pan works best. Invert the second pan and use it as a lid to trap steam during the first half of the bake. If you don't have a second pan, aluminum foil works too!</div>
+    </div>
+
+    <h2 class="section-heading">🧾 Ingredients</h2>
+    <div class="ingredients-box">
+      <ul>
+        <li>150g active sourdough starter</li>
+        <li>325g warm water</li>
+        <li>30g oil (avocado oil or light-tasting olive oil)</li>
+        <li>25g honey</li>
+        <li>500g bread flour</li>
+        <li>10g salt</li>
+        <li>Butter (for brushing the finished crust)</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">🥣 Mix the Dough</h2>
+    <div class="step-block">
+      <p>In a large mixing bowl, combine:</p>
+      <ul>
+        <li>325g warm water</li>
+        <li>150g active sourdough starter</li>
+        <li>30g oil</li>
+        <li>25g honey</li>
+      </ul>
+      <p>Whisk until the mixture looks milky and slightly frothy.</p>
+      <img class="recipe-img" src="initialmix.jpeg" alt="Initial mix" />
+      <p>Add 500g bread flour and 10g salt. Mix with a dough whisk or spatula until combined.</p>
+      <p>Using a slightly damp hand (or glove), continue mixing for a few minutes until no dry flour remains. The dough will look shaggy at first. That's normal.</p>
+      <img class="recipe-img" src="flourmix.jpeg" alt="Flour mixed in" />
+      <p>Cover and let rest for 1 hour.</p>
+    </div>
+
+    <h2 class="section-heading">✋ Stretch and Folds</h2>
+    <div class="step-block">
+      <p>After the rest, perform 4 rounds of stretch and folds, spaced 30 minutes apart.</p>
+      <p>One round:</p>
+      <ul>
+        <li>Wet your hand lightly</li>
+        <li>Grab one edge of the dough</li>
+        <li>Stretch it upward</li>
+        <li>Fold it into the center</li>
+        <li>Rotate the bowl and repeat on all four sides</li>
+      </ul>
+      <p>Cover and rest 30 minutes between each round. Each round will help the dough become smoother and stronger.</p>
+      <img class="recipe-img" src="stretchnfolds.jpeg" alt="Stretch and folds" />
+    </div>
+
+    <h2 class="section-heading">🌤️ Rest & Rise</h2>
+    <div class="step-block">
+      <p>After your final stretch and fold, cover the dough and let it rest until it becomes light, airy, and puffy. This usually takes about 4-8 hours, depending on room temperature and starter strength.</p>
+      <div class="tip-box">
+        👀 Your dough is ready when it has roughly doubled in size, looks smooth and puffy, jiggles when the bowl is gently shaken, and feels airy and full of gas.
+      </div>
+      <img class="recipe-img" src="bulk.jpeg" alt="Dough after bulk fermentation" />
+    </div>
+
+    <h2 class="section-heading">🍞 Shape the Dough</h2>
+    <div class="step-block">
+      <p>Lightly dampen your work surface and gently turn out the dough. Pat or stretch it into a rectangle.</p>
+      <ul>
+        <li>Fold one side into the center.</li>
+        <li>Fold the opposite side into the center so the edges meet.</li>
+        <li>Using lightly damp fingers, gently press out any large air bubbles.</li>
+        <li>Starting from one short end, roll the dough into a log.</li>
+        <li>Pinch the seam and ends closed.</li>
+      </ul>
+      <img class="recipe-img" src="shape.jpeg" alt="Shaped dough" />
+      <p>Place the dough seam-side down into a greased loaf pan.</p>
+    </div>
+
+    <h2 class="section-heading">🧺 Final Proof</h2>
+    <div class="step-block">
+      <p>Cover the loaf pan and let the dough rise at room temperature for 1-2 hours. The dough is ready when it looks noticeably puffy and has risen to fill most of the pan.</p>
+      <img class="recipe-img" src="rise.jpeg" alt="Dough proofing in pan" />
+    </div>
+
+    <h2 class="section-heading">🔥 Bake</h2>
+    <div class="step-block">
+      <p>Preheat the oven to 400°F (204°C).</p>
+      <p>When the dough is ready, use a sharp blade or bread lame to make 3 evenly spaced shallow cuts across the top of the loaf.</p>
+      <img class="recipe-img" src="scoering.jpeg" alt="Scoring the loaf" />
+      <p>Lightly mist the top of the dough with water.</p>
+      <ul>
+        <li>If you have two pans: Cover the loaf pan by inverting the second greased loaf pan directly on top of it to trap the steam.</li>
+        <li>If you have one pan: Tent the loaf pan loosely with a sheet of aluminum foil, ensuring it arches high enough that the rising dough won't hit it.</li>
+      </ul>
+      <p>Bake for 30 minutes covered at 400°F (204°C). Remove the cover. Reduce the oven temperature to 375°F (190°C) and bake for another 15 minutes.</p>
+      <div class="tip-box">🌡️ The loaf is fully baked when the internal temperature reaches 205°F (96°C).</div>
+    </div>
+
+    <h2 class="section-heading">🧈 Finish</h2>
+    <div class="step-block">
+      <p>Remove the bread from the loaf pan immediately to prevent the crust from getting soggy, and place it on a wire cooling rack.</p>
+      <div class="tip-box">The Secret to a Soft Crust: While the loaf is steaming hot, generously brush the top crust with salted or unsalted butter.</div>
+      <p>Allow the loaf to cool completely before slicing.</p>
+      <img class="recipe-img" src="finish.jpeg" alt="Finished sandwich loaf" />
+    </div>
+
+    <div class="final-note">
+      Sourdough takes repetition, not perfection. Each bake teaches you something about your dough. 🤍
+    </div>
+
   </div>
-  <div class="photo-placeholder"><div class="photo-placeholder-empty"><span>📷</span><p>Photo coming soon</p></div></div>
-  <div class="steps-placeholder">
-    <div class="step"><div class="step-num">1</div><div class="step-text">Step by step instructions coming soon. We are still perfecting this recipe for you!</div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-text">Tips, tricks, and all the happy accidents will be shared here.</div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-text">Follow along on Instagram and TikTok @crumbofherown for sneak peeks in the meantime!</div></div>
-  </div>
+
   <footer><p>Made with 🤍 and a whole lot of starter — © 2025 Crumb of Her Own</p></footer>
+
 </body>
 </html>
