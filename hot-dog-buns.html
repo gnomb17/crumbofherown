@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Sourdough Discard Hot Dog Buns — Crumb of Her Own</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJ0LKQ47FG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-NJ0LKQ47FG");
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #fdf6ec; --warm-white: #fffdf8; --blush: #e8c4a0; --rose: #c47a5a;
+      --sage-light: #b5c9a8; --brown: #6b4226; --text: #3d2b1f; --text-light: #7a5c47; --border: #e2cdb8;
+    }
+    body { font-family: 'Lora', serif; background-color: var(--cream); color: var(--text); min-height: 100vh; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,246,236,0.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; color: var(--brown); text-decoration: none; }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links a { display: block; padding: 0.4rem 1rem; text-decoration: none; font-size: 0.875rem; color: var(--text-light); border-radius: 20px; transition: all 0.2s; }
+    .nav-links a:hover { background: var(--blush); color: var(--brown); }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-light); text-decoration: none; font-size: 0.88rem; font-style: italic; margin: 2rem 2rem 0; }
+    .back-link:hover { color: var(--rose); }
+    .hero-img { width: 100%; max-height: 480px; object-fit: cover; display: block; margin-top: 1.5rem; }
+    .content { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 5rem; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; color: var(--brown); margin-bottom: 0.5rem; }
+    .tagline { color: var(--text-light); font-style: italic; font-size: 1rem; line-height: 1.7; margin-bottom: 1rem; }
+    .note { color: var(--text-light); font-style: italic; font-size: 0.9rem; line-height: 1.7; margin-bottom: 2.5rem; background: var(--warm-white); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; }
+    .section-heading { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown); margin: 2.5rem 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-box { background: var(--warm-white); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
+    .ingredients-box ul { list-style: none; }
+    .ingredients-box li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.97rem; display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-box li:last-child { border-bottom: none; }
+    .ingredients-box li::before { content: '🌾'; font-size: 0.85rem; }
+    .ingredients-box .sub-heading { font-weight: 600; color: var(--brown); padding-top: 1rem; font-style: italic; border-bottom: none; }
+    .ingredients-box .sub-heading::before { content: ''; }
+    .step-block { margin-bottom: 1.5rem; }
+    .step-block p { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.75rem; }
+    .step-block ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    .step-block ul li { color: var(--text); line-height: 1.85; font-size: 0.97rem; margin-bottom: 0.3rem; }
+    .recipe-img { width: 100%; border-radius: 16px; margin: 1.25rem 0; border: 1px solid var(--border); display: block; }
+    .tip-box { background: var(--warm-white); border-left: 4px solid var(--rose); border-radius: 0 12px 12px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; color: var(--text-light); font-style: italic; font-size: 0.93rem; line-height: 1.7; }
+    .final-note { background: var(--sage-light); border-radius: 16px; padding: 1.5rem 2rem; margin-top: 2.5rem; text-align: center; color: var(--brown); font-style: italic; font-size: 1rem; line-height: 1.8; }
+    footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.82rem; font-style: italic; }
+    @media (max-width: 600px) {
+      nav { padding: 0 1rem; } .nav-logo { font-size: 1rem; } .nav-links a { padding: 0.35rem 0.6rem; font-size: 0.78rem; }
+      .content { padding: 2rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Crumb of Her Own</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#recipes">Recipes</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#follow">Follow</a></li>
+    </ul>
+  </nav>
+
+  <a class="back-link" href="index.html">← Back to all recipes</a>
+
+  <img class="hero-img" src="bunheader.jpeg" alt="Soft Sourdough Discard Hot Dog Buns" />
+
+  <div class="content">
+
+    <h1>🌭 Soft Sourdough Discard Hot Dog Buns</h1>
+    <p class="tagline">Soft, fluffy homemade hot dog buns with a tender crumb and slightly sweet flavor. This recipe makes 10 buns.</p>
+    <div class="note">This recipe is my smaller batch adaptation of a hot dog bun recipe that inspired me. I adjusted the quantities, tested and changed the process, and rewrote the instructions with a beginner friendly approach.</div>
+
+    <h2 class="section-heading">🧾 Ingredients</h2>
+    <div class="ingredients-box">
+      <ul>
+        <li>345g all-purpose flour</li>
+        <li>123g warm water</li>
+        <li>150g sourdough discard</li>
+        <li>9g instant yeast</li>
+        <li>1 large egg</li>
+        <li>58g honey or granulated sugar</li>
+        <li>28g salted butter, softened</li>
+        <li>9g fine salt</li>
+      </ul>
+      <div class="sub-heading">Egg wash:</div>
+      <ul>
+        <li>1 egg yolk</li>
+        <li>1 tablespoon cream</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">🥣 Mix the Dough</h2>
+    <div class="step-block">
+      <p>Add everything except the butter to the bowl of a stand mixer:</p>
+      <ul>
+        <li>345g flour</li>
+        <li>123g warm water</li>
+        <li>150g sourdough starter or discard</li>
+        <li>9g instant yeast</li>
+        <li>1 egg</li>
+        <li>58g honey or sugar</li>
+        <li>9g salt</li>
+      </ul>
+      <p>Mix on low speed for about 2 minutes, until all of the flour is absorbed.</p>
+      <p>Increase the speed to medium (around speed 4) and mix for about 5 minutes, until the dough becomes smoother and begins developing strength.</p>
+      <p>Add the softened butter. Continue mixing on low-medium speed for another 3–5 minutes until the butter is fully incorporated and the dough becomes smooth again.</p>
+      <div class="tip-box">Tip: When done, the dough will be slightly sticky, but it should stretch several inches before tearing.</div>
+      <img class="recipe-img" src="windowpanebun.jpeg" alt="Windowpane test for hot dog bun dough" />
+    </div>
+
+    <h2 class="section-heading">🌤️ Rest & Rise</h2>
+    <div class="step-block">
+      <p>Cover the dough and let it rest at room temperature for 1–2 hours, until it has doubled in size.</p>
+    </div>
+
+    <h2 class="section-heading">⚖️ Divide the Dough</h2>
+    <div class="step-block">
+      <p>Turn the dough out onto your work surface. Divide into 10 equal pieces (about 76g each). Shape each piece into a smooth ball.</p>
+    </div>
+
+    <h2 class="section-heading">🌭 Shape the Buns</h2>
+    <div class="step-block">
+      <p>Lightly flour your rolling pin to prevent sticking. Avoid adding too much flour to the dough.</p>
+      <p>Roll each dough ball into a rectangle. Roll the dough up tightly into a log. Pinch the seam and ends closed.</p>
+      <img class="recipe-img" src="shaping.jpeg" alt="Shaping the hot dog buns" />
+      <p>Place the buns seam-side down on a greased, parchment-lined baking sheet. Arrange them close together with a little space between each bun. As they rise, they will expand and eventually touch, creating soft pull-apart sides.</p>
+    </div>
+
+    <h2 class="section-heading">🧺 Final Proof</h2>
+    <div class="step-block">
+      <p>Cover the buns with plastic wrap lightly sprayed with oil to prevent sticking. Let rise for 1–2½ hours, until very puffy.</p>
+      <p>The buns should be noticeably larger and touching each other before baking.</p>
+      <img class="recipe-img" src="proofedbuns.jpeg" alt="Proofed hot dog buns" />
+    </div>
+
+    <h2 class="section-heading">🔥 Bake</h2>
+    <div class="step-block">
+      <p>Preheat the oven to 375°F (190°C).</p>
+      <p>Prepare the egg wash: 1 egg yolk and 1 tablespoon cream. Whisk together and brush gently over the tops of the buns.</p>
+      <img class="recipe-img" src="eggwash.jpeg" alt="Egg wash on hot dog buns" />
+      <p>Bake for 16–20 minutes, until golden brown.</p>
+    </div>
+
+    <h2 class="section-heading">🧈 Finish</h2>
+    <div class="step-block">
+      <p>Remove the buns from the oven and immediately brush the tops with butter. Let cool before serving.</p>
+      <img class="recipe-img" src="finishbun.jpeg" alt="Finished hot dog buns" />
+    </div>
+
+    <div class="final-note">
+      <img class="recipe-img" src="finaldog.jpeg" alt="Hot dog in homemade bun" style="margin-top:0;">
+      Homemade buns are worth the extra effort. The dough may feel sticky while mixing, but that softness is what creates a fluffy, bakery style bun. 🤍
+    </div>
+
+  </div>
+
+  <footer><p>Made with 🤍 and a whole lot of starter — © 2025 Crumb of Her Own</p></footer>
+
+</body>
+</html>
